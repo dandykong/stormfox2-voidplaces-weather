@@ -1,10 +1,13 @@
 {
     "title"  : "[SF2 x Voidplaces] Void Weather",
     "type"   : "tool",
-    "tags"   : [ "fun", "scenic" ],
+    "tags"   : [ "fun", "scenic", "roleplay" ],
     "ignore" : [
 		"*.psd",
 		"*.vcproj",
-		"*.svn*"
+		"*.svn*",
+		"LICENSE.rst",
+		"SECURITY.md"
 	]
+
 }
