@@ -30,55 +30,55 @@ local bCM = string.Explode(" ", StormFox2.Map.GetSetting("fog_color") or "255 12
 local bC = Color(tonumber(bCM[1]) or 255, tonumber(bCM[2]) or 128, tonumber(bCM[3]) or 255)
 -- Day
  	--vp_clear:SetSunStamp("topColor",Color(91, 127.5, 255),		SF_SKY_DAY)
-    vp_clear:SetSunStamp("topColor",Color(31, 0, 31),		SF_SKY_DAY)
-	vp_clear:SetSunStamp("bottomColor",Color(63, 0, 63),SF_SKY_DAY)
+    vp_clear:SetSunStamp("topColor",Color(28, 2, 9),		SF_SKY_DAY)
+	vp_clear:SetSunStamp("bottomColor",Color(47, 4, 16), SF_SKY_DAY)
 	vp_clear:SetSunStamp("fadeBias",0.01,						SF_SKY_DAY)
-	vp_clear:SetSunStamp("duskColor",Color(127, 0, 127),		SF_SKY_DAY)
+	vp_clear:SetSunStamp("duskColor",Color(66, 5, 22),		SF_SKY_DAY)
 	vp_clear:SetSunStamp("duskIntensity",.64,					SF_SKY_DAY)
 	vp_clear:SetSunStamp("duskScale",0.29,						SF_SKY_DAY)
 	vp_clear:SetSunStamp("sunSize",20,							SF_SKY_DAY)
-	vp_clear:SetSunStamp("sunColor",Color(255, 127, 255),		SF_SKY_DAY)
+	vp_clear:SetSunStamp("sunColor",Color(240, 60, 110),		SF_SKY_DAY)
 	vp_clear:SetSunStamp("sunFade",1,							SF_SKY_DAY)
 	vp_clear:SetSunStamp("starFade",40,							SF_SKY_DAY)
 	--vp_clear:SetSunStamp("fogDensity",0.8,						SF_SKY_DAY)
     vp_clear:Set("HDRScale",0.33,                               SF_SKY_DAY)
 -- Night
 	vp_clear:SetSunStamp("topColor",Color(0,0,0),				SF_SKY_NIGHT)
-	vp_clear:SetSunStamp("bottomColor",Color(5.25, 1.5, 5.25),	SF_SKY_NIGHT)
+	vp_clear:SetSunStamp("bottomColor",Color(9, 1, 3),	SF_SKY_NIGHT)
 	vp_clear:SetSunStamp("fadeBias",0.12,						SF_SKY_NIGHT)
-	vp_clear:SetSunStamp("duskColor",Color(9, 0, 9),			SF_SKY_NIGHT)
+	vp_clear:SetSunStamp("duskColor",Color(28, 2, 9),			SF_SKY_NIGHT)
 	vp_clear:SetSunStamp("duskIntensity",0,					SF_SKY_NIGHT)
 	vp_clear:SetSunStamp("duskScale",0,						SF_SKY_NIGHT)
 	vp_clear:SetSunStamp("sunSize",0,							SF_SKY_NIGHT)
 	vp_clear:SetSunStamp("starFade",100,						SF_SKY_NIGHT)
-	vp_clear:SetSunStamp("sunColor",Color(63, 31, 63),		SF_SKY_NIGHT)
+	vp_clear:SetSunStamp("sunColor",Color(240, 60, 110),		SF_SKY_NIGHT)
 	vp_clear:SetSunStamp("sunFade",0,							SF_SKY_NIGHT)
 	--vp_clear:SetSunStamp("fogDensity",1,						SF_SKY_NIGHT)
     vp_clear:Set("HDRScale",0.1,                            SF_SKY_NIGHT)
 -- Sunset
 	-- Old Color(170, 85, 43)
-	vp_clear:SetSunStamp("topColor",Color(5.25, 0, 5.25),	SF_SKY_SUNSET)
+	vp_clear:SetSunStamp("topColor",Color(9, 1, 3),	SF_SKY_SUNSET)
 	--vp_clear:SetSunStamp("bottomColor",Color(204, 98, 5),	SF_SKY_SUNSET)
-	vp_clear:SetSunStamp("bottomColor",Color(31, 0, 31),	SF_SKY_SUNSET)
+	vp_clear:SetSunStamp("bottomColor",Color(28, 2, 9),	SF_SKY_SUNSET)
 	vp_clear:SetSunStamp("fadeBias",1,						SF_SKY_SUNSET)
-	vp_clear:SetSunStamp("duskColor",Color(20, 0, 20),	SF_SKY_SUNSET)
+	vp_clear:SetSunStamp("duskColor",Color(47, 4, 16),	SF_SKY_SUNSET)
 	vp_clear:SetSunStamp("duskIntensity",1,				SF_SKY_SUNSET)
 	vp_clear:SetSunStamp("duskScale",0.3,					SF_SKY_SUNSET)
 	vp_clear:SetSunStamp("sunSize",30,						SF_SKY_SUNSET)
-	vp_clear:SetSunStamp("sunColor",Color(127, 63, 127),	SF_SKY_SUNSET)
+	vp_clear:SetSunStamp("sunColor",Color(240, 60, 110),	SF_SKY_SUNSET)
 	vp_clear:SetSunStamp("sunFade",.5,						SF_SKY_SUNSET)
 	vp_clear:SetSunStamp("starFade",60,					SF_SKY_SUNSET)
 	--vp_clear:SetSunStamp("fogDensity",0.8,					SF_SKY_SUNSET)
 -- Sunrise
-	vp_clear:SetSunStamp("topColor",Color(63, 0, 63),	SF_SKY_SUNRISE)
+	vp_clear:SetSunStamp("topColor",Color(47, 4, 16),	SF_SKY_SUNRISE)
 	--vp_clear:SetSunStamp("bottomColor",Color(204, 98, 5),	SF_SKY_SUNRISE)
-	vp_clear:SetSunStamp("bottomColor",Color(127, 0, 127),	SF_SKY_SUNRISE)
+	vp_clear:SetSunStamp("bottomColor",Color(66, 5, 22),	SF_SKY_SUNRISE)
 	vp_clear:SetSunStamp("fadeBias",0.5,						SF_SKY_SUNRISE)
-	vp_clear:SetSunStamp("duskColor",Color(127, 0, 127),	SF_SKY_SUNRISE)
+	vp_clear:SetSunStamp("duskColor",Color(66, 5, 22),	SF_SKY_SUNRISE)
 	vp_clear:SetSunStamp("duskIntensity",0.4,				SF_SKY_SUNRISE)
 	vp_clear:SetSunStamp("duskScale",0.6,					SF_SKY_SUNRISE)
 	vp_clear:SetSunStamp("sunSize",20,						SF_SKY_SUNRISE)
-	vp_clear:SetSunStamp("sunColor",Color(127, 63, 127),	SF_SKY_SUNRISE)
+	vp_clear:SetSunStamp("sunColor",Color(240, 60, 110),	SF_SKY_SUNRISE)
 	vp_clear:SetSunStamp("sunFade",.5,						SF_SKY_SUNRISE)
 	vp_clear:SetSunStamp("starFade",60,					SF_SKY_SUNRISE)
 	vp_clear:SetSunStamp("fogDensity",0.8,					SF_SKY_SUNRISE)
@@ -89,7 +89,7 @@ local bC = Color(tonumber(bCM[1]) or 255, tonumber(bCM[2]) or 128, tonumber(bCM[
 	vp_clear:SetSunStamp("bottomColor",StormFox2.util.CCTColor(0),	SF_SKY_CEVIL)
 
 -- Default variables. These don't change.
-	vp_clear:Set("moonColor", Color( 205, 100, 205 ))
+	vp_clear:Set("moonColor", Color(240, 60, 110))
 	local moonSize = StormFox2.Setting.GetObject("moonsize")
 	vp_clear:Set("moonSize",moonSize:GetValue())
 
@@ -124,6 +124,50 @@ if CLIENT then
     vp_clear:AddAmbience(vp_sunstorm_roofed)
     vp_clear:AddAmbience(vp_sunstorm_outside)
     vp_clear:AddAmbience(vp_sunstorm_near_outside)
+
+	vp_clear.PostDraw2DSkyBox = function() -- Doesn't work
+		local new_sun = Material("pkvoidplaces/vpsprites/vpsprite_sun_center")
+		local new_sun_flare = Material("pkvoidplaces/vpsprites/vpsprite_generic_notsun")
+
+		local SunA = StormFox2.Sun.GetAngle()
+		local SunN = -SunA:Forward()
+
+		local sun = util.GetSunInfo()
+		local viewAng = StormFox2.util.RenderAngles()
+		-- Calculate dot
+		local rawDot = ( SunA:Forward():Dot( viewAng:Forward() ) - 0.8 ) * 5
+		if sun and sun.obstruction and sun.obstruction > 0 then
+			sunDot = rawDot
+		else
+			sunDot = 0
+		end
+		-- Calculate close to edge
+		local z = 1
+		local p = math.abs(math.sin(math.rad(SunA.p))) -- How far we are away from sunset
+		if p < 0.1 then
+			z = 0.8 + p * 0.2
+		end
+		local s_size = StormFox2.Sun.GetSize() -- / 2
+		local s_size2 = s_size * 1.2
+		local s_size3 = s_size * 3 -- * math.max(0, rawDot)
+		local c_c = StormFox2.Sun.GetColor() or color_white
+		local c = Color(c_c.r,c_c.g,c_c.b,c_c.a)
+
+		cam.Start3D( Vector( 0, 0, 0 ), EyeAngles() )
+			render.SuppressEngineLighting(true)
+			render.SetMaterial(new_sun)
+			render.DrawQuadEasy(SunN * -200, SunN, s_size2, s_size2, c, 0 )
+			if sunDot > 0 then
+				local a = (StormFox2.Mixer.Get("skyVisibility") / 100 - 0.5) * 2
+				if a > 0 then
+					c.a = a * 255
+					render.SetMaterial(new_sun_flare)
+					render.DrawQuadEasy(SunN * -200, SunN, s_size3 * sunDot , s_size3 * sunDot, c, 0 )
+				end
+			end
+			render.SuppressEngineLighting(false)
+		cam.End3D()
+	end
 
     function vp_clear.TickSlow()
         local TVol = 0
@@ -160,7 +204,9 @@ if SERVER then
 				EmitSound("pbvoidplaces/ambi/voidthunder.wav", Vector(0,0,0), 0, CHAN_AUTO, 2, SNDLVL_NONE)
 				timer.Create("sf2_vp_voidshock", 1.5, 1, function()
 					for i, v in ipairs( player.GetAll() ) do
-						if DRC then DRC:PopShield(v) end
+						if DRC then
+							DRC:EMP(v, v, 8)
+						end
 						v:SetArmor(0)
 						if StormFox2.Wind.IsEntityInWind(v) and StormFox2.Setting.Get("weather_damage", true) then
 							local dmg = DamageInfo()
