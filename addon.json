@@ -1,0 +1,10 @@
+{
+    "title"  : "[SF2 x Voidplaces] Void Weather",
+    "type"   : "tool",
+    "tags"   : [ "fun", "scenic" ],
+    "ignore" : [
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}
